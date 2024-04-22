@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+    <link rel="stylesheet" href="Style\bars.css">
+    <link rel="stylesheet" href="Style\beatbuttons.css">
+    <link rel="stylesheet" href="Style\main.css">
+    <link rel="stylesheet" href="Style\pattern options GUI.css">
+    <link rel="stylesheet" href="Style\pattern options GUI Random.css">
+
+    <link rel="stylesheet" href="Style\play.css">
+    <link rel="stylesheet" href="Style\starting options.css">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="grid-title">
+            <h1>Random Sequencer</h1>
+        </div>
+        
+        <div class="grid-bar">
+            <p id="barsdisplay">Bars 4 4</p>
+
+            <div id = 'bardiv' class="tab-container">
+                
+            </div>
+
+        </div>
+
+
+        <div id="pattern-options" class="grid-pattenroptions"></div>
+
+        <div class="grid-item grid-play">
+
+            <p id="speed" class="speeddisplay">120</p>
+            
+
+            <label for="quantity">BPM</label>
+            <input type="string" id="quantity" name="quantity">
+
+            <br><br>
+
+            <button onclick="start()">Play</button>
+            <button onclick="stop()">Stop</button>
+            <br>
+
+            <p id="error"></p>
+
+        </div>
+        <div class="grid-item grid-options">
+            
+            
+            
+                
+            <div class='initbar'>
+                
+                <p>Insert the numbers of beats for each bar separated by spaces </p>
+                <input class="barinput" type="string" id="barinput" name="barinput">
+    
+            </div>
+            
+            
+            
+            <br><br>
+
+            
+            <label for="subds">Subdivisions:</label>
+            <select name="subds" id="sdv">
+                <option value="4">4</option>
+                <option value="8">8</option>
+                <option value="16">16</option>
+                
+            </select>
+            <br><br>
+            
+            <label for="soundtype">Sound:</label>
+            <select name="soundtype" id="soundtype">
+                <option value="Sounds\Tick.mp3">Tick</option>
+                <option value="Sounds\Acoustic snare.mp3">Acoustic snare</option>
+                <option value="Sounds\Snare.mp3">Snare</option>
+                <option value="Sounds\Cmaj7.mp3">Cmaj7</option>
+                <option value="Sounds\Open Hat.mp3">Open Hat</option>
+                
+                <option value="Sounds\Kick.wav">Kick</option>
+                <option value="Sounds\Hi-Hat.wav">Hi-Hat</option>
+
+            </select>
+            <br><br>
+
+            <button id='newpattern' onclick="generatePattern(add=false,first=false)">New Pattern</button>
+            <button id='addpattern' onclick="generatePattern(add=true,first=false)">Add Pattern</button>
+                
+        </div>
+    </div>
+
+
+
+    <script src="./buttons state.js"></script>
+    <script src="./validation.js"></script>
+    <script src="./AudioAPI.js"></script>
+    <script src="./sounds.js"></script>    
+    <script src="./pattern options.js"></script>
+    <script src="./soundpattern.js"></script>
+    <script src="./Player.js"></script>
+    <script src="./debug.js"></script>
+    <script src="./Random functions.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+
+
+
+.pattern-option-interface{
+    display: grid;
+    grid-template-columns:auto;
+    grid-template-rows: auto auto auto;
+    background-color: rgba(113, 150, 167, 0.512);
+    text-align: left;
+    padding: 20px;
+}
+
+.optionsDiv {
+    padding: 3%;
+    border-width: 1px;      /* You can adjust the width of the border */
+    border-style: solid;    /* You can use other styles like dashed, dotted, etc. */
+    border-color: #000000;  /* You can set the color of the border */
+  }
+
+
+.changeSoundDiv{
+    grid-column: 1;
+    grid-template-columns: min-content min-content;
+
+}
+
+
+.optionTitle {
+    grid-column: 1/3;
+}
+
+.deleteButtonDiv {
+    margin-top:5%;
+    width: 100px;
+    grid-column: 1/3;
+    grid-row: 3;
+}
+
+
+.downloadSoundInput{
+
+    display: grid;
+    grid-template-columns: min-content min-content;
+}
+
+.downloadBtn{
+    width: 70px;
+    height: 20px;
+    margin-left: 5%;
+    font-size:x-small;
+}

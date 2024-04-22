@@ -1,0 +1,59 @@
+
+
+
+
+
+
+
+
+
+
+.button {
+
+    width: 37px; /* Set the desired width */
+    height: 37px; /* Set the desired height */
+    font-size: 16px;
+    color: rgba(0, 0, 0, 1);
+    border-radius: 10%;
+    border-color: rgba(255,255,255, 0);
+    border: 30%;
+    border-style:solid;
+    
+}
+
+
+
+
+/* //not used */
+.tick-played {
+    background-color: rgb(16, 198, 104)
+}
+
+.tick-current {
+    
+    
+    
+    border-color: rgba(0, 255, 68, 1);
+}
+
+
+.button-off{
+    background-color: rgb(112, 112, 112)
+}
+
+.button-on{
+    background-color: rgba(255, 255, 255)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  

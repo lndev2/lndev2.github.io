@@ -1,0 +1,28 @@
+
+
+
+
+
+.randomLableSelect{
+
+    display: grid;
+    grid-template-columns: min-content max-content min-content ;
+
+}
+
+.randomPatternInput{
+    grid-column: 3;
+    height: 20px;
+    vertical-align:middle;
+    margin: 5%;
+}
+
+.randomBarPatternInstr{
+
+    font-size: x-small;
+    grid-row: 2;
+    grid-column: 1/4;
+
+}
+
+

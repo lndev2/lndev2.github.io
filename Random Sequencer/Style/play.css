@@ -1,0 +1,23 @@
+
+
+
+.grid-play {
+    
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    text-align: center;
+    
+}
+
+.speeddisplay {
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+
+
+  
